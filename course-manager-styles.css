@@ -1,0 +1,187 @@
+html, body, main, .assignment, .course-header, #add-field, #new-options, #courses, #course, #add-course-card, .add-assignment-btn, .course-body {
+    display: flex;
+    justify-content: space-between;
+}
+  
+html, body, #add-field, #new-options, #course, #add-course-card, main, .course-body {
+    flex-direction: column;
+}
+
+#courses {
+    flex-direction: row-reverse;
+}
+/* 
+.course-body {
+    flex-direction: column-reverse;
+} */
+
+body {
+    background-color: #517664;
+    height: 100%;
+}
+
+main {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#home {
+    justify-items: center;
+}
+
+main, button, input {
+    font-family: "Delius", Verdana, sans-serif;
+}
+
+main, #courses {
+    justify-content: center;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #d3d3d3;
+    border: 1px solid #291528;
+    border-radius: 10px;
+    height: 1.5em;
+}
+
+#add-field, #new-course-view, #new-assignment-view, .assignment {
+    color: #3e3e3e;
+}
+
+#add-field {
+    width: 60em;
+    margin: 2em;
+}
+
+#add-field, #new-course-view, #new-assignment-view {
+    background-color: #9FD8CB;
+}
+
+#add-field, #new-course-view, #new-assignment-view {
+    border: 2px solid #e4e1e2;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+#new-options, #course-options {
+    padding-bottom: 20px;
+}
+
+#courses {
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.course, #add-course-card {
+    padding: 1em;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.course {
+    overflow-y: scroll;
+    background-color: #CACFD6;
+}
+
+#add-course-card {
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3c3c3c;
+    background-color: #94969a;
+    color: #545353;
+}
+
+header, .course-header {
+    color: #e4e1e2;
+}
+
+.course-header {
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2D3319;
+}
+
+.course-header, .assignment, #add-field {
+    align-items: center;
+}
+
+.hidden {
+    display: none; 
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 20;
+}
+
+#new-course-view h2, #new-assignment-view h2 {
+    padding-bottom: 1em;
+}
+
+h1 {
+    font-size: 35pt;
+}
+
+h3 {
+    margin: 0;
+    font-size: 80pt;
+}
+
+h4 {
+    font-size: 25pt;
+    padding-right: 0.15em;
+    margin: 0;
+}
+
+#add-btn {
+    width: 5em;
+}
+
+.checkmark {
+    font-size: 24px;
+    cursor: pointer;
+    color: grey; 
+}
+
+.checkmark:hover {
+    color: green;
+}
+
+.x {
+    font-size: 35px;
+    cursor: pointer;
+    color: grey; 
+}
+
+.x:hover {
+    color: red;
+}
+
+.add-assignment-btn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+#add-course-card:hover {
+    cursor: pointer;
+    color: rgb(49, 49, 49);
+    border: 5px solid rgb(49, 49, 49);
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #291528;
+    outline: none;
+    background-color: #e7e7e7;
+}
+
+input:focus {
+    background-color: #c5c7ca;
+}

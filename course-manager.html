@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Course Manager</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="course-manager-styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Meow+Script&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+            
+        <script src="utils.js"></script>
+        <script defer src="course-manager.js"></script>
+      </head>
+<body>
+    <header>
+        <a href="index.html"><h1>Anna G!</h1></a>
+        <nav>
+            <ul>
+                <li><a href="course-manager.html">Courses</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="wellness.html">Wellness</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="countdown.html">Countdowns</a></li>
+                <li><a href="routines.html">Routines</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Course Manager</h2>
+        <!-- add courses/assignments -->
+        <section id="home">
+            <!-- existing items -->
+            <section id="courses">
+                <section id="add-course-card">
+                    <h3>+</h3>
+                    <p>Add Course</p>
+                </section>
+            </section>
+        </section> 
+    
+        <!-- new course view -->
+        <section id="new-course-view" class="hidden">
+            <h2>New Course</h2>
+            <p id="course-already-exists" class="hidden">Course already exists.</p>
+            <!-- text input format found here: 
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text -->
+            <label>Course Name:  <input id="course-name" type="text" size="12" /></label>
+            <button id="create-course-btn">Create Course</button>
+            <button id="home-new-course">Back</button>
+        </section>
+
+        <!-- new assignment view -->
+        <section id="new-assignment-view" class="hidden">
+            <h2>hold</h2>
+            <input type="hidden" id="current-course-name" value="">
+            <label>Assignment Name:  <input id="assignment-name" type="text"  size="12" /></label>
+            <button id="create-assignment-btn">New Assignment</button>
+            <button id="home-new-assignment">Back</button>
+        </section>
+    </main>
+</body>
+</html>
